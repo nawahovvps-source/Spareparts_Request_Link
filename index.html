@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>กำลังเปิด Spare Parts Request...</title>
+    
+    <!-- Redirect อัตโนมัติทันที -->
+    <meta http-equiv="refresh" content="0; url=https://spareparts-request.vercel.app/">
+    
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            text-align: center;
+        }
+        .spinner {
+            width: 70px;
+            height: 70px;
+            border: 8px solid rgba(255,255,255,0.3);
+            border-top: 8px solid #ffffff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 25px;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        h2 {
+            margin: 0 0 10px 0;
+            font-size: 28px;
+        }
+        p {
+            opacity: 0.9;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="spinner"></div>
+    <h2>กำลังพาคุณไปยัง Spare Parts Request</h2>
+    <p>โปรดรอสักครู่...</p>
+
+    <!-- JavaScript สำรอง (ป้องกันกรณี meta refresh ไม่ทำงาน) -->
+    <script>
+        window.location.href = "https://spareparts-request.vercel.app/";
+    </script>
+</body>
+</html>
